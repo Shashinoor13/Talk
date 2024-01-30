@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "497432373430",
+    "project_id": "flutter-games-shashi",
+    "storage_bucket": "flutter-games-shashi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497432373430:android:3ba50b6deebf6550a8de17",
+        "android_client_info": {
+          "package_name": "com.example.talk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdfUcRMYCvz3xTtYIDJ3FpD9JFoxt-Ewk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
