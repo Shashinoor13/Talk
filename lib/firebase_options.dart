@@ -66,6 +66,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '497432373430',
     projectId: 'flutter-games-shashi',
     storageBucket: 'flutter-games-shashi.appspot.com',
+    androidClientId: '497432373430-2ofcm0cfe03pmif1chvc9ja0ve74r6e9.apps.googleusercontent.com',
+    iosClientId: '497432373430-r7iulv4pjau8p4hr76hueukpoc0u1iv2.apps.googleusercontent.com',
     iosBundleId: 'com.example.talk',
   );
 
@@ -75,6 +77,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '497432373430',
     projectId: 'flutter-games-shashi',
     storageBucket: 'flutter-games-shashi.appspot.com',
+    androidClientId: '497432373430-2ofcm0cfe03pmif1chvc9ja0ve74r6e9.apps.googleusercontent.com',
+    iosClientId: '497432373430-bcpbp9gpoug2o0p5dh8el6qqustkabvo.apps.googleusercontent.com',
     iosBundleId: 'com.example.talk.RunnerTests',
   );
 }

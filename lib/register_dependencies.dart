@@ -8,7 +8,10 @@ final getIt = GetIt.instance;
 
 void registerDependencies() {
   getIt.registerSingleton<AuthRepository>(AuthRepository());
-  getIt.registerSingleton<AuthBloc>(AuthBloc(authRepository: getIt<AuthRepository>()));
+  AuthBloc authBloc = AuthBloc(authRepository: getIt<AuthRepository>());
+  getIt.registerSingleton<AuthBloc>(authBloc);
+  authBloc.add(AuthEventStarted());
+
   getIt.registerSingleton<AppRouter>(AppRouter(authBloc: getIt<AuthBloc>()));
   getIt.registerSingleton<Redirected>(Redirected());
 }

@@ -12,7 +12,20 @@
           "package_name": "com.example.talk"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "497432373430-2ofcm0cfe03pmif1chvc9ja0ve74r6e9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.talk",
+            "certificate_hash": "f2eaf90bd310ee1cfbdce837db42700f67f76fbe"
+          }
+        },
+        {
+          "client_id": "497432373430-v4atb8u6rds948bms1338eg95n5bbk85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCdfUcRMYCvz3xTtYIDJ3FpD9JFoxt-Ewk"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497432373430-v4atb8u6rds948bms1338eg95n5bbk85.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "497432373430-bcpbp9gpoug2o0p5dh8el6qqustkabvo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.talk.RunnerTests"
+              }
+            }
+          ]
         }
       }
     }

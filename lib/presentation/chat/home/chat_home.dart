@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class RegisterPage extends StatelessWidget {
-  const RegisterPage({super.key});
+class ChatHomePage extends StatelessWidget {
+  const ChatHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('Register Page'),
+        child: Text('Chat Home Page'),
       ),
     );
   }
