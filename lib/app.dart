@@ -26,7 +26,8 @@ class MyApp extends StatelessWidget {
         providers: [
           BlocProvider(create: (context) => getIt<AuthBloc>()),
           BlocProvider(create: (context) => HomeDataBloc()),
-          BlocProvider(create: (context) => PostBloc()),
+          BlocProvider(
+              create: (context) => PostBloc()..add(const GetInitialPosts())),
           BlocProvider(create: (context) => AddPostCubit()),
           BlocProvider(create: (context) => ImageSelectCubit()),
         ],

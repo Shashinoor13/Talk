@@ -30,7 +30,7 @@ final class PostFailure extends PostState {
 }
 
 final class PostsLoaded extends PostState {
-  final ResponseModel posts;
+  final List<PostModel> posts;
 
   const PostsLoaded({required this.posts});
 
