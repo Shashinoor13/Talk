@@ -85,7 +85,7 @@ class ProfilePage extends StatelessWidget {
       title: 'New Post',
       body: 'This is a new post',
       caption: 'New Post',
-      imageUrl: 'https://www.google.com',
+      imageUrl: [],
       location: 'New York',
       user: _user,
     );

@@ -14,4 +14,7 @@ final class ImageSelectLoading extends ImageSelectState {}
 final class ImageSelectLoaded extends ImageSelectState {
   final List<XFile> images;
   const ImageSelectLoaded({required this.images});
+
+  @override
+  List<Object> get props => [images];
 }

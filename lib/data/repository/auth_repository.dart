@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:talk/data/constants/collection_names.dart';
 import 'package:talk/data/model/user_model.dart';
 
 class AuthRepository {
@@ -104,7 +105,7 @@ class AuthRepository {
     );
 
     await _firebaseStorage
-        .collection('users')
+        .collection(userCollection)
         .doc(user.uid)
         .set(newUser.toMap());
     return newUser;

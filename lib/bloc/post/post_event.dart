@@ -46,3 +46,11 @@ final class GetUserPosts extends PostEvent {
 final class GetPosts extends PostEvent {
   const GetPosts();
 }
+
+final class GetInitialPosts extends PostEvent {
+  const GetInitialPosts();
+}
+
+final class LoadMorePosts extends PostEvent {
+  const LoadMorePosts();
+}

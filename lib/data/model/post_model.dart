@@ -7,7 +7,7 @@ class PostModel {
   final String title;
   final String body;
   final String caption;
-  final String imageUrl;
+  final List<dynamic> imageUrl;
   final String location;
   final UserModel user;
   String? postId;
@@ -74,6 +74,31 @@ class PostModel {
       type: 'post',
       description: '${user.name} posted a new post',
       keywords: title.split(' '),
+    );
+  }
+
+  //copywith
+  PostModel copyWith({
+    String? title,
+    String? body,
+    String? caption,
+    List<String?>? imageUrl,
+    String? location,
+    UserModel? user,
+    String? postId,
+    String? date,
+    AppMetadata? metadata,
+  }) {
+    return PostModel(
+      title: title ?? this.title,
+      body: body ?? this.body,
+      caption: caption ?? this.caption,
+      imageUrl: imageUrl != null
+          ? imageUrl.where((item) => item != null).toList().cast<String>()
+          : this.imageUrl,
+      location: location ?? this.location,
+      user: user ?? this.user,
+      metadata: metadata ?? this.metadata,
     );
   }
 }
